@@ -1,0 +1,49 @@
+.nav-items{
+    float: left;
+    border: 2px solid blue;
+    border-style: none;
+    color: rgb(204, 198, 198);
+    /* setting color for text */
+    padding: 1em 1em 1em 0;
+    /* text-decoration-style: none; */
+    list-style: none; 
+    /*for eliminating bullets */
+    /* text-decoration-color: rgb(184, 174, 174); */
+}
+
+header,.nav{
+    max-width: 101%;
+    width: 100%;
+    background-color: rgb(4, 4, 116);
+    height: 3em;
+    font: Verdana;
+    /* height to fit boxes of content */
+}
+.nav-items:hover{
+    /* decoration for animation(lines e.g strikethrough) */
+    /* decoration-style e.g dotted */
+    text-decoration: overline;
+    text-decoration-style: solid;
+    color: turquoise;
+}
+.social > li{
+    list-style: none;
+    display: inline;
+    padding-top: 40px;
+    padding-left: 20px;
+    position: relative;
+    bottom: 0;
+}
+.far-end{
+    /* clear:left; */
+    float: right;
+    /* align-self: flex-end; */
+}
+main{
+    width: 100%;
+    text-align: center;
+    /* left: 4 rem; */
+}
+body{
+    background-color: rgb(241, 246, 246);
+}

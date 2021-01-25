@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mika's port webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="common.css">
+   
+    <title>Document</title>
+    <style>
+       body{
+            font: 16px Verdana small ;
+            color: #9B9B9B;  
+        } 
+        footer{
+            position: relative;
+            top: 2px;
+        }
+        li+img{
+            border:red 2px solid;
+        }
+        .wrapper{
+            /* align-content: center; */
+            /* position: relative;
+            left: 30px; */
+            align-self: center;
+            /* align-items: center; */
+            transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            transition-duration: 0.3s;
+        }
+        .grid-items{
+            float: left;
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+        } 
+        
+        @media screen and(max-width:600px){
+            .grid-items{
+            display: flex;
+            padding-right: 10px;
+            margin: 10px;
+            width: 200px;
+        }
+        }
+        main{
+            margin-bottom: 10px;
+        }
+        
+        </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <li class="nav-items" onclick="location.href='assignment.html';">Home
+                
+            </li>
+            <li class="nav-items" onclick="location.href='about.html';">About </li>
+            <li class="nav-items far-end" onclick="location.href='contacts.html'">Contacts</li>
+        </div>
+
+    </header>
+    <main>
+        <div id="wrapper">
+            <div id="container intro">
+               <h2><div>This is our main page</div></h2>
+               
+            <div class="grid-items">
+                    <iframe width="200" height="200" src="https://www.youtube.com/embed/-OWJ7c4mRrw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-style: none;"></iframe>
+                </div>
+            </div>
+            <div class="grid-items">
+                <img src="gosple1.png" width="200" height="200">
+            </div>
+
+            <div>
+                <img src="gosple2.png" width="200" height="200">
+            </div>
+           
+            
+            
+        </div>
+        
+    </main>
+    <footer>
+        <div class="social">
+            <li onclick="location.href='https://www.instagram.com/ngabomikr/';">
+                <img src="icons/insta.png" width="20px" height="20px" onclick="yes">
+
+            </li>
+            <li onclick="location.href='https://www.facebook.com/mika.ngabo/';">
+                <img src="icons/LinkedIn.png" width="20px" height="20px" onclick="yes">
+
+            </li>
+        </div>
+    </footer>
+</body>
+<script>
+    navigator.geolocation.getCurrentPosition((position)=>{
+        alert("your current latitude is"+position.coords.latitude
+        +"your current longitude is"+position.coords.longitude+
+        "your current altitude accuracy is"+position.coords.altitudeAccuracy);
+   
+
+    },(err)=>{
+        alert("couldn't retrieve your location"+err);
+        });
+
+        // let dd=prompt("how old are you",100);
+        // alert(dd);
+</script>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contacts</title>
+    <link rel="stylesheet" href="common.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* text align center changes everything/display block */
+        label {
+  display: block;
+  letter-spacing: 4px;
+  padding-top: 30px;
+  text-align: center;
+}
+label .label-text {
+  color: #9B9B9B;
+  cursor: text;
+  font-size: 15px;
+  /* line-height: 20px; */
+  /* padding-bottom: 30px; */
+  text-transform: uppercase;
+  /* -moz-transform: translateY(-34px);
+  -ms-transform: translateY(-34px);
+  -webkit-transform: translateY(-34px); */
+  /* transform: translateY(-34px); */
+  transition: all 0.3s;
+}
+/* animation for the text to float up and turn white */
+/* label input:focus + .label-text {
+  color: #F0F0F0;
+  font-size: 13px;
+  margin-top: 10px;
+  -moz-transform: translateY(-74px);
+  -ms-transform: translateY(-74px);
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px);
+} */
+/* remove the input box styling */
+label input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #4A4A4A;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  outline: 0;
+  padding: 5px 20px;
+  text-align: center;
+  transition: all 0.3s;
+  width: 200px;
+}
+/* once you click in the input the input width box animates */
+label input:focus {
+  max-width: 100%;
+  width: 400px;
+}
+/* the text floats up during form validation */
+label input:valid + .label-text {
+  font-size: 13px;
+  /* -moz-transform: translateY(-74px);
+  -ms-transform: translateY(-74px);
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px); */
+}
+/* button styling */
+/* button {
+  background: transparent;
+  color: #F0F0F0;
+  border: 2px solid #F0F0F0;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 20px 75px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 15px 30px;
+  -webkit-transition: all 0.4s;
+ -moz-transition: all 0.4s;
+ transition: all 0.4s;
+}
+button:hover, button:focus {
+  background-color: white;
+  color: #333333;
+} */
+.after::after{
+    content: "Click on input to animate the contact form thanks";
+    display: Block;
+    border: 1px solid black;
+    border-style: none;
+    border-width: 1em;
+    color: #9B9B9B;
+    text-align: center;
+  cursor: text;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+        
+        .nav > li{
+            float: left;
+            border: 2px solid blue;
+            border-style: none;
+            color: rgb(204, 198, 198);
+            /* setting color for text */
+            padding: 1em 1em 1em 0;
+            /* text-decoration-style: none; */
+            list-style: none; 
+            /*for eliminating bullets */
+            /* text-decoration-color: rgb(184, 174, 174); */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <li class ="nav-items" onclick="location.href='assignment.html';">Home
+                
+            </li>
+            <li class ="nav-items" onclick="location.href='about.html';">About
+                <!-- <a href="about.html"></a> -->
+            </li>
+            <li class ="nav-items far-end"onclick="locatio.href='contacts.html'">Contacts</li>
+        </div>
+
+    </header>
+    <main>
+        <div class="after"></div>
+        <form>
+            <label>
+                <input name="name" id="name" type="text" placeholder="Mika" readonly />
+                <div class="label-text">Full Name</div>
+            </label>
+            <label>
+                <input type="email" name="email" id="email"  placeholder="ngabo.mika@gmail.com" readonly/>
+                <div class="label-text">Email</div>
+            </label>
+            <label>
+                <input type="tel" name="phone" id="phone"  placeholder="0780310798" readonly/>
+                <div class="label-text">Phone Number</div>
+            <!-- </label> -->
+            <!-- <button type="submit" value="Submit">Submit</button> -->
+            </label>
+            </form>
+    </main>
+   
+       <footer>
+        <div class=social>
+            <li onclick="location.href='https://www.instagram.com/ngabomikr/';">
+                <img src="icons/insta.png" width="20px" height="20px" onclick="yes">
+
+            </li>
+            <li onclick="location.href='https://www.facebook.com/mika.ngabo/';">
+                <img src="icons/LinkedIn.png" width="20px" height="20px" onclick="yes">
+
+            </li>
+        </div>
+    </footer>
+</body>
+</html>
